@@ -9,3 +9,7 @@ body,
 .App {
   @apply h-full;
 }
+
+.menu-button {
+  @apply text-gray-400 border-2 border-white hover:text-orange-400 hover:border-2 hover:border-orange-400 hover:bg-orange-100
+}
