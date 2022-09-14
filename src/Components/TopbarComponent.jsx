@@ -1,6 +1,8 @@
-import { Button } from "@mui/material";
+import { Button, IconButton, InputAdornment, TextField } from "@mui/material";
 import React from "react";
 import TableBarIcon from "@mui/icons-material/TableBar";
+import SearchIcon from "@mui/icons-material/Search";
+import AutorenewIcon from "@mui/icons-material/Autorenew";
 
 export default function TopbarComponent() {
   return (
@@ -15,11 +17,37 @@ export default function TopbarComponent() {
                   ScanBills
                 </h3>
               </div>
-            </div>
-            <div className="h-full xl:flex items-center justify-end hidden">
               <div className="w-full h-full flex items-center">
-                <div className="w-full pr-4 h-full flex items-center">
-                  <Button variant="contained" className="bg-orange-400 text-white" startIcon={<TableBarIcon />}>
+                <TextField
+                  id="outlined-basic"
+                  label="Search products..."
+                  variant="filled"
+                  size="small"
+                  className="border-none"
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <SearchIcon />
+                      </InputAdornment>
+                    ),
+                  }}
+                />
+              </div>
+            </div>
+            <div className="h-full flex items-center justify-end">
+              <div className="w-full h-full flex items-center">
+                <div className="w-auto pr-4 h-full flex items-center ">
+                  <IconButton color="secondary" aria-label="Refresh" className="bg-gray-100 text-black rounded">
+                    <AutorenewIcon />
+                  </IconButton>
+                </div>
+                <div className="w-auto pr-4 h-full flex items-center">
+                  <Button
+                    variant="contained"
+                    className="bg-orange-400 text-white shadow-none"
+                    startIcon={<TableBarIcon />}
+                    size="large"
+                  >
                     Select Table
                   </Button>
                 </div>

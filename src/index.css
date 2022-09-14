@@ -11,5 +11,5 @@ body,
 }
 
 .menu-button {
-  @apply text-gray-400 hover:text-orange-400 hover:border-2 border-orange-400 hover:bg-orange-100
+  @apply text-gray-400 border-2 border-white hover:text-orange-400 hover:border-2 hover:border-orange-400 hover:bg-orange-100
 }
