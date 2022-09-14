@@ -11,31 +11,31 @@ function SidebarComponent() {
   const sidebarMenu = [
     {
       title: "Dashboard",
-      icon: <HomeIcon />,
+      icon: <HomeIcon sx={{ fontSize: 28 }} />,
     },
     {
       title: "Customers",
-      icon: <PersonIcon />,
+      icon: <PersonIcon sx={{ fontSize: 28 }} />,
     },
     {
       title: "Tables",
-      icon: <TableBarIcon />,
+      icon: <TableBarIcon sx={{ fontSize: 28 }} />,
     },
     {
       title: "Cashier",
-      icon: <CurrencyExchangeIcon />,
+      icon: <CurrencyExchangeIcon sx={{ fontSize: 28 }} />,
     },
     {
       title: "Orders",
-      icon: <LocalMallIcon />,
+      icon: <LocalMallIcon sx={{ fontSize: 28 }} />,
     },
     {
       title: "Reports",
-      icon: <PieChartIcon />,
+      icon: <PieChartIcon sx={{ fontSize: 28 }} />,
     },
     {
       title: "Settings",
-      icon: <SettingsIcon />,
+      icon: <SettingsIcon sx={{ fontSize: 28 }} />,
     },
   ];
   return (
@@ -44,7 +44,7 @@ function SidebarComponent() {
         <div className="px-2">
           {sidebarMenu?.map((menu) => {
             return (
-              <div className="flex flex-col justify-center items-center px-2 py-3 my-3 rounded menu-button cursor-pointer">
+              <div className="flex flex-col justify-center items-center px-2 py-3 my-1 rounded menu-button cursor-pointer">
                 {menu.icon}
                 <div className="text-xs mt-1">{menu.title}</div>
               </div>
