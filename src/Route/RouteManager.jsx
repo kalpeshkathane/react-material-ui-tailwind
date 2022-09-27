@@ -6,6 +6,7 @@ import SideBarLayout from "../Layouts/SideBarLayout";
 
 import Dashboard from "../Components/Pages/Dashboard";
 import NotFound from "../Components/Pages/NotFound";
+import SignInPage from "../Components/Pages/SignInPage";
 const Login = lazy(() => import('../Components/Pages/Login'));
 const BlankPage = lazy(() => import('../Components/Pages/BlankPage'));
 
@@ -14,14 +15,15 @@ function RouteManager() {
     <Router>
       <div className="App">
         <Routes>
-        <Route element={<SideBarLayout />}>
-          <Route path="/" element={<Dashboard />} />
-        </Route>
-        <Route element={<FullLayout />}>
-        <Route path="/login" element={<Login />} />
-          <Route path="/404" element={<BlankPage />} />
-          <Route path="/notfound" element={<NotFound/>} />
-        </Route>
+          <Route element={<SideBarLayout />}>
+            <Route path="/" element={<Dashboard />} />
+          </Route>
+          <Route element={<FullLayout />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/404" element={<BlankPage />} />
+            <Route path="/notfound" element={<NotFound />} />
+            <Route path="/signinpage" element={<SignInPage />} />
+          </Route>
         </Routes>
       </div>
     </Router>
