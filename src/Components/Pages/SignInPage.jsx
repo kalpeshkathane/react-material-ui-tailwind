@@ -1,5 +1,6 @@
 import React from 'react'
 import Group1 from "../../Assets/images/Group_38.svg"
+import Group2 from "../../Assets/images/Group_57.png"
 
 const SignInPage = () => {
     return (
@@ -7,15 +8,14 @@ const SignInPage = () => {
         //     <h1 class="font-bold text-6xl mt-0 mb-2 text-orange-600">Sign in to Scanbills</h1>
         // </div>
 
-        <div class="flex justfy-between">
-
-
+        <div class="flex justify-center">
+            <div className='fixed'><img class="h-4/5" src={Group2} alt="" /></div>
             <div class="p-2 ml-16">
                 <p class="font-bold text-5xl mt-64 mb-14 text-orange-400">Sign in to Scanbills</p>
                 <div class="text-center lg:text-left pb-10">
                     <button
                         type="button"
-                        class="inline-block px-20 py-4 border-2 border-black text-black font-bold text-xl leading-snug rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                        class="inline-block px-20 py-4 border-2 border-black text-black font-bold text-xl leading-snug rounded shadow-md hover:bg-slate-400 hover:shadow-lg focus:bg-gray-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-600 active:shadow-lg transition duration-150 ease-in-out">
                         Sign in with Google
                     </button>
                 </div>
@@ -51,7 +51,7 @@ const SignInPage = () => {
                     <div class="text-center lg:text-left p-4">
                         <button
                             type="button"
-                            class="inline-block px-20 py-4 bg-orange-400 text-black font-bold text-xl leading-snug rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                            class="inline-block px-20 py-4 bg-orange-400 text-black font-bold text-xl leading-snug rounded shadow-md hover:bg-slate-400 hover:shadow-lg focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                             Sign in
                         </button>
                     </div>
@@ -59,10 +59,10 @@ const SignInPage = () => {
                 <div class="border-b-2 border-orange-600"></div>
             </div>
             <div class="mt-40">
-                <img class="h-4/5"src={Group1} alt="" />
+                <img class="h-4/5" src={Group1} alt="" />
 
             </div>
-            
+
 
         </div>
 

@@ -5,7 +5,7 @@ import Group2 from "../../Assets/images/Group_2.svg"
 const NotFound = () => {
     return (
 
-        <div className='w-full h-full flex justify-center items-center bg-white'>
+        <div className='w-full h-full flex flex-wrap justify-center items-center bg-white'>
             <div className='absolute'>
                 <img src={Group2} alt="" />
                 <div className='flex items-center justify-center w-full '>
